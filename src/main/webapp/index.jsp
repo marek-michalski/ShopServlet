@@ -1,7 +1,11 @@
+<%@ page import="pl.marek.controller.LanguageProvider" %>
 <%@ include file="header.jsp" %>
 <main>
-    <h3>Main Page</h3>
-    <p>Some text.</p>
+    <fieldset>
+        <legend><h3>Strona Glowna</h3></legend>
+        <p>Some text.</p>
+        <%= LanguageProvider.INSTANCE.getMessage("hello") %>
+    </fieldset>
 </main>
 <%@ include file="footer.jsp" %>
 

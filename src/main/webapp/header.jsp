@@ -15,9 +15,11 @@
 </header>
 
 <nav>
-    <h3>MENU:</h3>
-    <a href="about.jsp">O Firmie</a>
-    <a href="products.jsp">Produkty</a>
-    <a href="login.jsp">Logowanie</a>
-    <a href="contact.jsp">Kontakt</a>
+    <fieldset>
+    <legend><h3>MENU:</h3></legend>
+    <a href="about.jsp">O Firmie</a>&nbsp;
+    <a href="products.jsp">Produkty</a>&nbsp;
+    <a href="login.jsp">Logowanie</a>&nbsp;
+    <a href="contact.jsp">Kontakt</a>&nbsp;
+    </fieldset>
 </nav>
