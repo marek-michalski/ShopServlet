@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "AdminFilter", urlPatterns = {"/ProductServlet"})
+@WebFilter(filterName = "AdminFilter", urlPatterns = {"/ProductServlet", "/products.jsp"})
 public class FilterServlet implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {

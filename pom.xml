@@ -6,7 +6,7 @@
 
   <groupId>pl.marek</groupId>
   <artifactId>ShopServlet</artifactId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.3-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>ShopServlet Maven Webapp</name>
