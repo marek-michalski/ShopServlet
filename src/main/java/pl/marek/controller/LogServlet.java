@@ -14,6 +14,7 @@ public class LogServlet extends HttpServlet {
     private static final String NAME = "login";
     private static final String PASSWORD = "password";
     private static final String ATTRIBUTE_ADMIN = "access";
+    private static final String NO_ACCESS = "no acces";
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -22,8 +23,9 @@ public class LogServlet extends HttpServlet {
         HttpSession session = req.getSession();
         if (login.equals("admin") && password.equals("admin")) {
             session.setAttribute(ATTRIBUTE_ADMIN, "admin");
-            resp.sendRedirect("/ShopServlet/productServlet");
+            resp.sendRedirect("/ShopServlet/productsAccess.jsp");
         } else {
+            session.setAttribute(ATTRIBUTE_ADMIN, "no access");
             resp.sendRedirect("/ShopServlet/login.jsp");
         }
     }

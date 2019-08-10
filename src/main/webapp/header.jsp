@@ -1,7 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <%
+        String path = "style.css";
+    %>
+    <link rel="stylesheet" href=<%=path%> type="text/css"/>
     <title>Sklep oparty o servlety w Javie</title>
     <meta name="description" content="Sklep WWW zbudowany w oparciu o servlety w Javie"/>
     <meta name="keywords" content="Java, Servlet, JSP, HTML, CSS"/>
